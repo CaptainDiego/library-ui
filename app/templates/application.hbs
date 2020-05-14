@@ -1,5 +1,19 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="app">
+	<nav class="main-nav">
+		<h1 class="logo">
+			<a href="#">
+				<img src="/logo.svg" alt="Pipescore.io">
+				<span class="sr-only">Pipescore.io</span>
+			</a>
+		</h1>
+		<ul>
+			<li>
+				<a href="">🏢 Organisations</a>
+				<a href="">🎯 Leads</a>
+			</li>
+		</ul>
+	</nav>
+	<main class="app-content">
+		{{outlet}}
+	</main>
+</div>
