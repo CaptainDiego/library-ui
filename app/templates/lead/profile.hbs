@@ -2,12 +2,18 @@
 
 <div class="slide-out">
 	<div class="slide-out-card">
-			<LinkTo @route="lead" class="btn-back">
-				<span class="sr-only">Back</span>
-			</LinkTo>
+		<a href="/leads" class="btn-back">
+			<span class="sr-only">Back</span>
+		</a>
 		<div class="slide-out-heading">
 			<div class="title">
-				<h3>Lead Profile #{{model.id}}</h3>
+				<h3>{{model.first}} {{model.last}}</h3>
+
+				<div class="actions">
+					<button class="btn-recessed" onclick={{action "deleteLead" model}}>
+						Delete
+					</button>
+				</div>
 			</div>
 		</div>
 
