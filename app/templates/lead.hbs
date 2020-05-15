@@ -1,0 +1,22 @@
+<div class="panel-heading">
+	<div class="search">
+		<input type="text " placeholder="Search by Lead Name" >
+	</div>
+	<a href="">
+		<div class="sr-only">Add New Lead</div>
+	</a>
+</div>
+
+<div class="panel-content">
+	<h3 class="panel-title">Leads</h3>
+
+	<ul class="collection">
+		{{#each model.data as |lead|}}
+			<li>
+				<a href="">
+					{{lead.attributes.first}} {{lead.attributes.last}} – {{lead.attributes.email}}
+				</a>
+			</li>
+		{{/each}}
+	</ul>
+</div>
