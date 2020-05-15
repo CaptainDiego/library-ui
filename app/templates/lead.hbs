@@ -12,11 +12,11 @@
 
 	<ul class="collection">
 		{{#each model.data as |lead|}}
-			<li>
-				<a href="">
-					{{lead.attributes.first}} {{lead.attributes.last}} – {{lead.attributes.email}}
-				</a>
-			</li>
+			<Lead-list-item
+			  @first={{lead.attributes.first}}
+			  @last={{lead.attributes.last}}
+			  @email={{lead.attributes.email}}
+			/>
 		{{/each}}
 	</ul>
 </div>
