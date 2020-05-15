@@ -11,11 +11,11 @@
 	<h3 class="panel-title">Leads</h3>
 
 	<ul class="collection">
-		{{#each model.data as |lead|}}
+		{{#each model as |lead|}}
 			<Lead-list-item
-			  @first={{lead.attributes.first}}
-			  @last={{lead.attributes.last}}
-			  @email={{lead.attributes.email}}
+			  @first={{lead.first}}
+			  @last={{lead.last}}
+			  @email={{lead.email}}
 			/>
 		{{/each}}
 	</ul>
