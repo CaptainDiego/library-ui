@@ -1,15 +1,17 @@
 <div class="app">
 	<nav class="main-nav">
 		<h1 class="logo">
-			<a href="#">
+			<LinkTo @route="index">
 				<img src="/logo.svg" alt="Pipescore.io">
 				<span class="sr-only">Pipescore.io</span>
-			</a>
+			</LinkTo>
 		</h1>
 		<ul>
 			<li>
-				<a href="">🎯 Leads</a>
-				<a href="">🏢 Organisations</a>
+				<LinkTo @route="lead">🎯 Leads</LinkTo>
+			</li>
+			<li>
+				<LinkTo @route="index">🏢 Organisations</LinkTo>
 			</li>
 		</ul>
 	</nav>
