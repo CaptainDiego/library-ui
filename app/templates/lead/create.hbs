@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="slide-out-content">
-			<form>
+			<form onsubmit={{action "saveLead"}}>
 				<div class="field">
 					<label>
 						First Name:
@@ -29,6 +29,11 @@
 						Email:
 					</label>
 					<Input @type="email" @value={{model.email}} placehodler="Lead's email"/>
+				</div>
+				<div class="form-footer">
+					<button type="submit" class="btn-submit">
+						Save
+					</button>
 				</div>
 			</form>
 		</div>
