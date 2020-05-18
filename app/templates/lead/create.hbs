@@ -1,0 +1,36 @@
+<div class="slide-out-bg"></div>
+
+<div class="slide-out">
+	<div class="slide-out-card">
+		<LinkTo @route="lead" class="btn-back">	
+			<span class="sr-only">Back</span>
+		</LinkTo>
+		<div class="slide-out-heading">
+			<div class="title">
+				<h3>New Lead</h3>
+			</div>
+		</div>
+		<div class="slide-out-content">
+			<form>
+				<div class="field">
+					<label>
+						First Name:
+					</label>
+					<Input @type="text" @value={{first}} placehodler="Lead's First Name"/>
+				</div>
+				<div class="field">
+					<label>
+						Last Name:
+					</label>
+					<Input @type="text" @value={{last}} placehodler="Lead's Last Name"/>
+				</div>				
+				<div class="field">
+					<label>
+						Email:
+					</label>
+					<Input @type="email" @value={{email}} placehodler="Lead's email"/>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

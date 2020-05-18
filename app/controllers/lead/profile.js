@@ -7,5 +7,5 @@ export default class LeadProfileController extends Controller {
 		lead.destroyRecord().then(() => {
 			this.transitionToRoute('lead');
 		});
-	}	
+	}
 };
