@@ -1,0 +1,41 @@
+<div class="slide-out-bg"></div>
+
+<div class="slide-out">
+	<div class="slide-out-card">
+		<LinkTo @route="lead.profile" @model={{model}} class="btn-back">	
+			<span class="sr-only">Back</span>
+		</LinkTo>
+		<div class="slide-out-heading">
+			<div class="title">
+				<h3>Editing: {{model.first}} {{model.last}}</h3>
+			</div>
+		</div>
+		<div class="slide-out-content">
+			<form>
+				<div class="field">
+					<label>
+						First Name:
+					</label>
+					<Input @type="text" @value={{model.first}} placehodler="Lead's First Name"/>
+				</div>
+				<div class="field">
+					<label>
+						Last Name:
+					</label>
+					<Input @type="text" @value={{model.last}} placehodler="Lead's Last Name"/>
+				</div>				
+				<div class="field">
+					<label>
+						Email:
+					</label>
+					<Input @type="email" @value={{model.email}} placehodler="Lead's email"/>
+				</div>
+				<div class="form-footer">
+					<button type="submit" class="btn-submit">
+						Save
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

@@ -10,6 +10,7 @@
 				<h3>{{model.first}} {{model.last}}</h3>
 
 				<div class="actions">
+					<LinkTo @route="lead.edit" @model={{model}} class="btn-pop">Edit</LinkTo>
 					<button class="btn-recessed" onclick={{action "deleteLead" model}}>
 						Delete
 					</button>

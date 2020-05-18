@@ -10,5 +10,6 @@ Router.map(function() {
   this.route('lead', { path: '/leads' }, function() {
     this.route('profile', { path: '/:id' });
     this.route('create');
+    this.route('edit', { path: '/:id/edit' });
   });;
 });
