@@ -11,31 +11,7 @@
 			</div>
 		</div>
 		<div class="slide-out-content">
-			<form>
-				<div class="field">
-					<label>
-						First Name:
-					</label>
-					<Input @type="text" @value={{model.first}} placehodler="Lead's First Name"/>
-				</div>
-				<div class="field">
-					<label>
-						Last Name:
-					</label>
-					<Input @type="text" @value={{model.last}} placehodler="Lead's Last Name"/>
-				</div>				
-				<div class="field">
-					<label>
-						Email:
-					</label>
-					<Input @type="email" @value={{model.email}} placehodler="Lead's email"/>
-				</div>
-				<div class="form-footer">
-					<button type="submit" class="btn-submit">
-						Save
-					</button>
-				</div>
-			</form>
+			<Lead-form @lead={{model}} @saveLead={{action "saveLead"}}/>
 		</div>
 	</div>
 </div>
