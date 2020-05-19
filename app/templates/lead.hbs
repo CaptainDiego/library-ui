@@ -1,8 +1,8 @@
 <div class="panel-heading">
 	<div class="search">
-		<input type="text " placeholder="Search by Lead Name" >
+    <Input type="text" placeholder="Search by Lead Name or Email" @value={{search}}/>
 	</div>
-	<LinkTo @route="lead.create" class="btn-new">	
+	<LinkTo @route="lead.create" class="btn-new">
 		<div class="sr-only">Add New Lead</div>
 	</LinkTo>
 </div>
