@@ -4,4 +4,5 @@ export default class LeadModel extends Model {
   @attr() first;
   @attr() last;
   @attr() email;
+  @attr() createdAt;
 }

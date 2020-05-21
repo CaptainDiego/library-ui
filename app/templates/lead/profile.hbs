@@ -21,9 +21,11 @@
         <p>
           <strong>Email:</strong> {{model.email}}
         </p>
+        <p>
+          <strong>Lead added on:</strong> {{moment-format model.createdAt 'dddd, MMMM Do YYYY'}}
+        </p>
       </div>
 		</div>
-
 		<div class="slide-out-content">
     </div>
 	</div>
